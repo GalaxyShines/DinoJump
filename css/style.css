@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#content{
+    width: 100vw;
+    height: 50vh;
+    background-color: #f4f4f4;
+    position: relative;
+}
+
+#start-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#start-button{
+    width: 10%;
+    height: 10%;
+    background-color: #1678ff;
+    color: white;
+    font-size: 120%;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#ball{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    /* height: 100px; */
+}
+
+#score{
+    position: absolute;
+    left: 5%;
+    top: 0;
+    padding: 15px;
+    font-size: 150%;
+}
+
+#console{
+    position: absolute;
+    left: 15%;
+    top: 0;
+    height: 10%;
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#console-button{
+    color: white;
+    background-color: #1678ff;
+    border-radius: 10px;
+    width: 90%;
+    height: 80%;
+    border: none;
+    font-size: 110%;
+    cursor: pointer;
+    display: none;
+    outline-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.speed0{
+    animation-name: speed0ani;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+@keyframes speed0ani
+{
+    from {right: 0%;}
+    to {right: 100%;}
+}
+
+#overTitle{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 400%;
+    font-family: '微软雅黑';
+}

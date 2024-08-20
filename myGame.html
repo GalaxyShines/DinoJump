@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyGame</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+    <div id="content">
+        <div id="start-box">
+            <button id="start-button" onclick="startGame()">开始游戏</button>
+        </div>
+        <div id="ball">
+            <!-- <img src="./svg/ball.svg" alt=""> -->
+            <svg id="ball-svg" width="50" height="100" xmlns="http://www.w3.org/2000/svg">
+                <circle
+                cx="25"
+                cy="25"
+                r="25"
+                fill="black"
+                stroke=""
+                stroke-width="1" />
+                <path d="M 25 25 L 50 85 L 0 85 Z" fill="black" stroke=""/>
+                <path id="ball-svg-leg-1" d="M 10 85 L 10 100 L 17.5 100 L 17.5 85 Z" fill="black" />
+                <path id="ball-svg-leg-2" d="M 32.5 85 L 32.5 100 L 40 100 L 40 85 Z" fill="black" />
+            </svg>
+        </div>
+        <div id="score">000000</div>
+        <div id="console"><div id="console-button" onclick="consoleClick()">暂停</div></div>
+        <div id="overTitle">
+            游戏结束
+        </div>
+    </div>
+</body>
+</html>
